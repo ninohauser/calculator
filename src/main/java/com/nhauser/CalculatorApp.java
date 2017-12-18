@@ -1,7 +1,7 @@
 package com.nhauser;
 
 public class CalculatorApp {
-	public String sample() {
-		return "sample";
+	public static void main(String[] args) {
+		System.out.println("App started");
 	}
 }
