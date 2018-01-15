@@ -3,7 +3,8 @@ sudo: false
 sript: mvn test
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
+  user: "ninohauser"
+  password: "nino.ha1999"
   file: "FILE TO UPLOAD"
   skip_cleanup: true
   on:
