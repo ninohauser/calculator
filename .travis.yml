@@ -1,10 +1,14 @@
 language: java
 sudo: false
 sript: mvn test
+before_deploy:
+- git config --local user.name "ninohauser"
+- git config --local user.email "hausernino@gmail.com"
+- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
+  api_key:
+    secure: KLuspgUOnsoWbTdI5UZBodzMsSZOuMlXesqSUIYs7rAW15avJoXd/N1qbNJqcyYCXFM8CTtoDPQs1SztszB2GblDOonrfUTEQ78wy7vC7Gy69ExQvop8Bly9N5WX2rvAdYUtdzV4Un/g3BAWoHfqGJ45tHuJJUOtkv2eZ6A9qyGxnKinau6pvlod8dduT7IYU/jPO1wRkRbsRirg9B/ro5ZOMffTyqhAZVJ7NMR4idOh30VMnpNdZpGRikFjE4ZD1p1Je6EPAXGHcH81Pj+y4h6aKFVadQdzYgdrYQe5gn/gwdo0ajqdfy0t3rGaSaJgOvhxCcK3LtMb35lJids2L10Xky002meXv6C78hBplbv3jkPULwDzAFQCsXNj+XyTV03tESnRCYUmlKKSpe2hP9VPz8/yWY/e1IegQtiTgKosJcY4YhLZ+lRVSeRg/SsAVhkf+zVALP0qCS/W3NvTFaAIBMiImcbCvuobcFGTJ0OdNfmIZVVrv1mJy53etbM9YzwLALVx9siDcJNePXEbzIXMzvEToFHGCauq7CrMn81vHtffBUERwgpVEAp3rnDmQZu76bTw3yr78SEoujgy5r2QhP2GZMHoQtQWBCLmUCkW8Qs+skPcAQ+NOZuibaHRyuhBqNP1lF2QLC7h+Ucy7ZKqRII5cZ0XdxzPOJ97Yxs=
+  file: D:\BMS&BBW\0. M426\mavenWorkspace\calculator-demo\target\calculator-demo-0.0.1-SNAPSHOT.jar
   on:
-    tags: true
+    repo: ninohauser/calculator
