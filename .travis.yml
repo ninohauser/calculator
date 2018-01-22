@@ -1,6 +1,6 @@
 language: java
 sudo: false
-sript: mvn test
+script: mvn install
 before_deploy:
 - git config --local user.name "ninohauser"
 - git config --local user.email "hausernino@gmail.com"
