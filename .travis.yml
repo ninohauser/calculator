@@ -9,6 +9,6 @@ deploy:
   provider: releases
   api_key:
     secure: In6hPhIcLttnI5suXAoI0Kze5EiU0jQje0NHFP+96aYwWMnOtXZ27fU6duOOqXl2Ei47r2Ap8BAZ9eQO8ul8OjL8JUC6FkcKEeI/ieBLo8B3fjlNSxHgraI5xT6KJgvZ2Cm9xmr0Kf2NoryaS7ROBeeyUdHJr9r3nn4WTbeB5dUo6ktQSv90hkeyMqMJD3FtRDR4qEGvkXLfj6SQgVo4R3cNEkKJgldreG7+lMz9YnNYIjHQuNPrw3/ShHKpGlPBjW7hMNyEMk6n7NAP4XYGsF1xWmk7yWYarwu4qxzKHaFKsfwklUFeDXiTbWXK7LZxptmy5N3CH+bqicCqHGrm+YHrMT9+0FsrPhcAlP7XpkJB2W24HFoI0kIcOY24cly+6omHoirq/saZf0oPf8xxTtau6iSuiVYJOa8BnAvOUSSX1djmrFyHFoKByG3CY/uzkcgTjcQp5JaI3BtJonELIQWR0DEMuQSAw4KLcVzbQArfUGdIA8dDJ3M+XiAM8Y3vdlNGxTBCwOUQ2Of0XqopuW+IcUAJN9Fia85GbNRhhffELWFDhk7rg4D4G4dkIt1qjRJgo531qTTyFKUy8W4p+2GB7M/z/0w+mW668xYrQ/F0xC8ccKtevGbYlJ1KSPFpGdUI8dDraiu0/D5il71yZOG6UNxzmagjyPZ2p8YllZ8=
-  file: E:\BMS&BBW\0. M426\mavenWorkspace\calculator-demo\target\calculator-demo-0.0.1-SNAPSHOT.jar
+  file: /home/travis/build/ninohauser/calculator/pom.xml to /home/travis/.m2/repository/com/nhauser/calculator-demo/0.0.1-SNAPSHOT/calculator-demo-0.0.1-SNAPSHOT.pom
   on:
     repo: ninohauser/calculator
